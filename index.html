@@ -1,75 +1,38 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ADNBIO</title>
-    <link rel="icon" href="src/images/icon.png">
-    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|IBM+Plex+Sans:600" rel="stylesheet">
-    <link rel="stylesheet" href="dist/css/style.css">
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-</head>
-<body class="is-boxed has-animations">
-    <div class="body-wrap boxed-container">
-        <header class="site-header">
-            <div class="container">
-                <div class="site-header-inner">
-                    <div class="brand header-brand">
-                        <h1 class="m-0">
-                            <a href="#">
-								<img class="header-logo-image asset-light" src="dist/images/logo-light.svg" alt="Logo">
-								<img class="header-logo-image asset-dark" src="dist/images/logo-dark.svg" alt="Logo">
-                            </a>
-                        </h1>
-                    </div>
-                </div>
-            </div>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="js/style.js">
+        <title>ADNBIO</title>
+        <link rel="icon" href="images/icon.png">
+        <link rel="stylesheet" media="handheld" type="text/css" title="mobile" href="mobile.css" />
+        <link rel="stylesheet" media="screen and (max-width: 1280px)" href="petite_resolution.css" />
+    </head>
+
+    <body>
+        <header>
+        <div>
+            <a href="index.html">
+                <img class="header-logo-image asset-light" src="images/logo-dark.svg" alt="Logo">
+                
+            </a>                            
+        </div>
         </header>
 
-        <main>
-            <section class="hero">
-                <div class="container">
-                    <div class="hero-inner">
-						<div class="hero-copy">
-	                        <h1>ADNBio France</h1><h3><i>Formations et Conseils</h3><br>
-	                        <p class="hero-paragraph">Déposer votre CV ici.</p>
-	                        <div class="hero-cta">
-								<a class="button button-primary" href="https://forms.gle/BfRABUqat6Vvhbrt9">Cliquer ici</a>
-								
-							</div>
-						</div>
-						<div class="hero-media">
-							
-							
-							<div id="logo">
-								<img class="hero-media-image asset-light" src="src/images/adndirec.png" alt="Logo">
-								<img class="hero-media-image asset-dark" src="dist/images/adndirec.png" alt="Logo">
-							</div>
-						</div>
-                    </div>
-                </div>
-            </section>
+        <div class="flex">
+            <div class="toop">
+                <h1><img src="images/logo.png" alt="logo" width="160" height="56"></br>
+                <i>Formations et Conseils</h1>
+                <a class="button" href="https://forms.gle/BfRABUqat6Vvhbrt9">
+                <strong>Déposer votre CV ici.</strong>
+                </a>
+                
 
-
-        </main>
-
-        <footer class="site-footer has-top-divider">
-            <div class="container">
-                <div class="site-footer-inner">
-                    <div class="brand footer-brand">
-                        <a href="#">
-							<img class="asset-light" src="dist/images/logo-light.svg" alt="Logo">
-							<img class="asset-dark" src="dist/images/logo-dark.svg" alt="Logo">
-                        </a>
-                    </div>
-
-                    <div class="footer-copyright">&copy; 2022 ADNBIO, all rights reserved</div>
-                </div>
             </div>
-        </footer>
-    </div>
-
-    <script src="dist/js/main.min.js"></script>
-</body>
+            <div class="liser">
+                <img src="images/adndirec.png" alt="Logo">
+            </div>
+        </div>
+    </body>
 </html>
