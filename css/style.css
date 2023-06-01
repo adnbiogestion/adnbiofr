@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba( rgb(38, 230, 38));
+    background-image: image();
+}
+.banner video{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.nav-items{
+    background: #0082e600;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    height: 100%;
+    width: 80%;
+    text-align: left;
+    margin: auto;
+    left: 10px;
+  }
+  .logo img{
+    cursor: pointer;
+    margin-top: 1vh;
+    margin-left: 10px;
+}
+.nav-items ul{
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.nav-items ul li{
+    list-style: none;
+    display: inline-block;
+    height: 20px;
+    width: auto;
+    padding: 12px 20px;
+    
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    font-size: 15px;
+}
+li .active, a:hover{
+    color: rgb(30, 255, 0);
+    transition: 0.4s;
+    
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 1090px){
+    label.logo{
+        height: 50%;
+        width: 30%;
+        text-align: left;
+        margin: auto;
+        left: 10px;
+      }
+      .logo img{
+        cursor: pointer;
+        height: 100%;
+        width: 20%;
+        margin-top: 3vh;
+        margin-left: 10px;
+    }
+    .nav-items ul li a{
+      font-size: 12px;
+    }
+  }
+  @media (max-width: 898px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: rgb(36, 216, 19);
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    label.logo{
+        height: 50%;
+        width: 30%;
+        text-align: left;
+        margin: auto;
+        left: 10px;
+      }
+      .logo img{
+        cursor: pointer;
+        height: 80%;
+        width: 20%;
+        margin-top: 3vh;
+        margin-left: 10px;
+    }
+    .nav-items ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    .nav-items ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #3cd649;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+
+  }
+.main{
+    align-content: center;
+    text-align: center;
+    margin-top: 40vh;
+    color: white;
+}
+.main h4{
+    font-size: 70px;
+}
+button {
+    padding: 15px 20px;
+    background: rgb(113, 189, 0);
+    border: 2px solid transparent;
+    border-radius: 30px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    text-decoration: none;
+}
+button:hover{
+    background-color: transparent;
+    border-radius: 30px;
+    color: rgb(156, 245, 22);
+    border-color: rgb(113, 189, 0);
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+@media (max-width: 1127px) {
+    .main h4{
+        font-size: 50px;
+    }
+    .main h4 img{
+        height: 10vh;
+    }
+    .banner .content{
+        font-size: x-small;
+        width: 100%;
+        
+    }
+    label.logo{
+      height: 50%;
+      width: 30%;
+      text-align: left;
+      margin: auto;
+      left: 10px;
+    }
+    .logo img{
+      cursor: pointer;
+      height: 80%;
+      width: 20%;
+      margin-top: 2vh;
+      margin-left: 10px;
+  }
+}
+@media (max-width: 650px) {
+    .main h4{
+        font-size: 30px;
+    }
+    .main h4 img{
+        height: 8vh;
+    }
+    .banner .content{
+        font-size: x-small;
+        width: 100%;
+        
+    }
+}
+@media (max-width: 400px) {
+    .main h4{
+        font-size: 20px;
+    }
+    .main h4 img{
+        height: 5vh;
+    }
+    .banner .content{
+        font-size: x-small;
+        width: 100%;
+        
+    }
+    label.logo{
+      height: 50%;
+      width: 30%;
+      text-align: left;
+      margin: auto;
+      left: 10px;
+    }
+    .logo img{
+      cursor: pointer;
+      height: 50%;
+      width: 30%;
+      margin-top: 3vh;
+      margin-left: 10px;
+  }
+}
