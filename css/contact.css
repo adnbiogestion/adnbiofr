@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba( rgb(38, 230, 38));
+    background-image: url(https://i.postimg.cc/d1wbSFTT/Servicesbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.banner video{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+
+
+
+.contact1 h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-top: 5%;
+}
+
+
+/*-------------------------------------------------------
+16. Contact US css 
+---------------------------------------------------------*/
+.contact-us-wpr .g-5, .contact-us-wpr .gx-5 {
+  --bs-gutter-x: 5rem; }
+
+.contact-form {
+  padding: 4rem;
+  background-color: white;
+  box-shadow: 0 0 22px rgba(0, 0, 0, 0.09); }
+  .contact-form .form-control:focus {
+    box-shadow: none;
+    outline: none; }
+  .contact-form .contact-sub-btn button {
+    transition: .5s ease-in-out;
+    margin-top: 3rem; }
+
+textarea.form-control {
+  height: 15rem !important;
+  padding-top: 2rem !important; }
+
+.addr-box-single {
+  margin-bottom: 5rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+   
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  padding: 4rem 3rem 4rem 4rem;
+  position: relative;
+  z-index: 1; }
+  .addr-box-single::before {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 1rem;
+    background-color: var(--clr-def);
+    left: 0;
+    top: 0;
+    content: ''; }
+  .addr-box-single:last-child {
+    margin-bottom: 0; }
+  .addr-box-single .addr-icon i {
+    font-size: 3rem;
+    color: var(--clr-white);
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    background-color: var(--clr-def);
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1; }
+    .addr-box-single .addr-icon i::after {
+      position: absolute;
+      z-index: -1;
+      content: '';
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 1px solid var(--clr-def);
+      height: 6rem;
+      width: 6rem;
+      z-index: -1;
+      border-radius: 50%; }
+  .addr-box-single .addr-desc {
+    line-height: 1; }
+    .addr-box-single .addr-desc h5 {
+      text-transform: capitalize;
+      margin-bottom: 1rem; }
+    .addr-box-single .addr-desc p {
+      line-height: 1.5; }
+
+.contact-page {
+  flex-direction: column;
+  align-items: flex-start; }
+  .contact-page .contact-table {
+    width: 100%;
+    margin-top: 3rem; }
+    .contact-page .contact-table .table > :not(caption) > * > * {
+      padding: 2rem 3rem; }
+
+.contact-bottom h2 {
+  margin-top: -1rem; }
+
+.g-map-area {
+  height: 40rem; }
+
+.g-map--wrapper iframe {
+  width: 100%;
+  height: 40rem;
+  border: none; }
