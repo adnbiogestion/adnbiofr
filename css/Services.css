@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba( rgb(38, 230, 38));
+    background-image: url(https://i.postimg.cc/d1wbSFTT/Servicesbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.banner video{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.nav-items{
+    background: #0082e600;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    height: 100%;
+    width: 80%;
+    text-align: left;
+    margin: auto;
+    left: 10px;
+  }
+  .logo img{
+    cursor: pointer;
+    margin-top: 1vh;
+    margin-left: 10px;
+}
+.nav-items ul{
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.nav-items ul li{
+    list-style: none;
+    display: inline-block;
+    height: 20px;
+    width: auto;
+    padding: 12px 20px;
+    
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    font-size: 15px;
+}
+li .active, a:hover{
+    color: rgb(30, 255, 0);
+    transition: 0.4s;
+    
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 1090px){
+    label.logo{
+        height: 50%;
+        width: 30%;
+        text-align: left;
+        margin: auto;
+        left: 10px;
+      }
+      .logo img{
+        cursor: pointer;
+        height: 100%;
+        width: 20%;
+        margin-top: 2vh;
+        margin-left: 10px;
+    }
+    .nav-items ul li a{
+        font-size: 14px;
+      }
+    
+  }
+  @media (max-width: 982px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: rgb(36, 216, 19);
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    label.logo{
+        height: 50%;
+        width: 30%;
+        text-align: left;
+        margin: auto;
+        left: 10px;
+      }
+      .logo img{
+        cursor: pointer;
+        height: 80%;
+        width: 20%;
+        margin-top: 2vh;
+        margin-left: 10px;
+    }
+    .nav-items ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    .nav-items ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #000000;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+
+  }
+@media (max-width: 400px) {
+    label.logo{
+        height: 50%;
+        width: 30%;
+        text-align: left;
+        margin: auto;
+        left: 10px;
+      }
+      .logo img{
+        cursor: pointer;
+        height: 50%;
+        width: 30%;
+        margin-top: 3vh;
+        margin-left: 10px;
+    }
+}
