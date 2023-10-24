@@ -11,71 +11,89 @@
     <link rel="stylesheet" href="js/style.js">
     <link rel="abortant icon" href="images/icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
  
 
-	<link href="css/bootstrap.min.css" rel="stylesheet" />
+
 	
 	<link href="css/style2.css" rel="stylesheet">
+	
 
 
 </head>
 <body>
+<style>
+        .header {
+            background-color: transparent;
+            color: #fff;
+        }
+
+        .navbar {
+        	
+            background-color: transparent;
+            
+        }
+        #main_nav{
+        	
+            background-color: transparent;
+            text-align: center;
+            
+        }
+
+        .navbar-brand img {
+            width: 150px; /* Adjust this size as needed */
+            height: auto;
+        }
+
+        .nav-link {
+            color: #fff;
+        }
+        .navbar-nav .nav-item .nav-link {
+            text-transform: uppercase;
+            font-weight: bold; /* Make the text bold */
+            transition: green 0.2s; /* Smooth hover effect */
+        }
+        .navbar-nav .nav-item .nav-link:hover {
+            color: green; /* Change the color on hover */
+        }
+
+        /* Media query for phone screens */
+        @media (max-width: 767px) {
+            /* Apply styles for phones here */
+            .navbar-nav .nav-item .nav-link {
+                text-transform: none; /* Remove uppercase for small screens */
+            }
+        }
+    </style>
 
 <!-- Start header
     ============================================= -->
     <header class="header header-2">
-		<div class="main-navigation">
-			<nav id="navbar_top" class="navbar navbar-expand-lg">
-				<div class="container g-0">
-					<a class="navbar-brand" href="index.html">
-						<img src="images/logo_footer.png" class="logo-display" alt="thumb" width="200px" height="100px">
-					</a>
-					
-					<div class="collapse navbar-collapse" id="main_nav">
-						<ul class="navbar-nav ms-auto">
-                    					
-							<li class="nav-item">
-								<a class="nav-link" href="https://adnbiogestion.wixsite.com/website-5-copy"> A propos </a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="https://www.adnbio.ma/Learning"> Espace Learning </a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="contact.html"> Contactez-nous </a>
-							</li>
-							
-							
-						
-							
-					
-						</ul>
-					</div> <!-- navbar-collapse.// -->
-					<div class="search-cart">
-						<ul class="cart-li">
-							
-							<li>
-								<div class="site-search">
-									<input type="checkbox" class="site-input-checkbox" id="site-input-checkbox">
-									<label for="site-input-checkbox" class="site-input-label">
-										<img src="images/loupe.png" width="30px" heigth="30px">
-										<span class="site-close">
-											<img src="images/close.png" width="30px" heigth="30px">
-										</span>
-									</label>
-									<div class="navigation__background">&nbsp;</div>
-									<div class="site-search-content">
-										<form>
-											<input type="text" placeholder="Search" class="input-style-3">
-											<button type="submit">Search</button>
-										</form>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div> <!-- container -->
-			</nav>
-		</div>
+        <div class="main-navigation">
+            <nav id="navbar_top" class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo_footer.png" class="logo-display" alt="thumb">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="main_nav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://adnbiogestion.wixsite.com/website-5-copy">A propos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.adnbio.ma/Learning">Espace Learning</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contactez-nous</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
     <!-- End header -->
     <br>
@@ -98,4 +116,8 @@
     </div>
 
 </body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 <html>
